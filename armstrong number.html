@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<script>
+    let num,temp,count=0,rem=0,sum=0;
+    num=parseInt(prompt("enter number"));
+    temp=num;
+    while(temp!=0)
+    {
+        count++;
+        temp=math.floor(temp/10);
+    }
+    document.write("count in digits"+count);
+    temp=num;//153=153
+    while(temp!=0)//0!=0
+    {
+        rem=temp%10;//1%10=4
+        sum+=math.pow(rem,count);//153==153
+        temp=math.floor(temp/10);//153/10=1/10=0
+    }
+    if(sum==num)//153==153
+    {
+        document.write("this is armstrong number");
+    }
+    else{
+    document.write("this is not armstrong number");
+    }
+    </script>
+</html>

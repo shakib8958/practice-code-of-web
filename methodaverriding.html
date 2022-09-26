@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            class Animal
+            {
+                cry()
+                {
+                    document.write("this is crying");
+                }
+            }
+            class Lion extends Animal
+            {
+                roar()
+                {
+                    document.write("roaring");
+                }
+            }
+            class Cub extends Animal
+            {
+                weep()
+                {
+                    document.write("weeping");
+                    
+                }
+            }
+
+            const s=new Cub();
+            s.cry();
+            s.roar();
+            s.weep();
+
+        </script>
+    </head>
+</html>

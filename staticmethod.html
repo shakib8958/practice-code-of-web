@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <p id="demo"></p>
+            <p  id="demo1"></p>
+            <script>
+                class Car{
+                    constructor(name)
+                    {
+                        this.name=name;
+                    }
+                    static hello()
+                    //this is static method we can run withoiut create the abject 
+                    {
+                    return "hello";
+                    }
+                    display()
+                    {
+                        return "h1";
+                    }
+                    
+
+                    }
+                    let sc=new Car("maruti");//this is call the class name not a create the abject of the method this is rule of 
+                    document.getElementById("demo").innerHTML=sc.display();
+                    document.getElementById("demo1").innerHTML=car.hello();
+                
+            </script>
+        </body>
+    </head>
+</html>

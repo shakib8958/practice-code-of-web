@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <body>
+            <p id="demo"></p>
+            
+            <script>
+            // Create a Map
+            const fruits = new Map([
+              ["apples", 500],
+              ["bananas", 300],
+              ["oranges", 200]
+            ]);
+            //more value add,use of set method
+            //fruits.set("apples",400);
+            //delete 
+            fruits.delete("bananas");
+            document.getElementById("demo").innerHTML = fruits.get("bananas");
+            </script>
+             
+            </script>
+        </body>
+    </head>
+</html>

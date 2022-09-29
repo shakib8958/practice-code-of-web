@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            class Student
+            {
+                constructor(rno,fname,lname)
+                {
+                    this.rno=rno;
+                    this.fname=fname;
+                    this.lname=lname;
+                    document.write("constructor fire");
+                }
+            }
+
+            setrollno(rollno)
+            {
+                document.write("setter fire");
+                this.rno=rollno;
+            }
+            getrollno()
+            {
+                document.write("getter fire");
+                return this.rollno;
+            }
+            var sc=new Student(102,"shakib",khan);
+            document.write(sc.rollno);
+
+        </script>
+    </head>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+    <style>
+        .item{
+            grid-area:header;
+
+        }
+        .item2{
+            grid-area:menu;
+
+        }
+        .item3{
+             grid-area:main;
+        }
+        .item4{
+            grid-area:right;
+        }
+        .item5{
+            grid-area:footer;
+
+        }
+        .grid-container{
+             display:grid;
+             grid-template-areas:'header header header header header header' 
+             'menu main main main right right'
+             'menu footer footer footer footer footer';
+             gap:10px;
+             background-color: red;
+             padding: 10px;
+        }
+        .grid container > div
+        {
+             background-color: rgba(225,25,255,0.5);
+             text-align:center;
+             padding: 20px;
+             font-size: 30px;
+        }
+        </style>
+        </head>
+        <body>
+            <h1> grid layout </h1>
+            <div class="grid-container"> 
+                <div class="item"> header </div>
+                <div class="item2"> menu </div>
+                <div class="item3"> main </div>
+                <div class="item4"> right </div>
+                <div class="item5"> footer </div>
+            </div>
+        </body>
+        </html>
